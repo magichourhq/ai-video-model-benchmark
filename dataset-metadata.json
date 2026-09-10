@@ -1,0 +1,16 @@
+{
+  "title": "Commercial Image-to-Video Model Benchmark via Magic Hour",
+  "id": "magichourai/commercial-image-to-video-model-benchmark",
+  "licenses": [
+    {
+      "name": "CC BY 4.0"
+    }
+  ],
+  "keywords": [
+    "AI video",
+    "image to video",
+    "generative AI",
+    "model benchmark",
+    "Magic Hour"
+  ]
+}

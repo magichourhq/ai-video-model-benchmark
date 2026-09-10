@@ -1,0 +1,64 @@
+{
+  "attempts": 60,
+  "benchmark_id": "mh-i2v-commercial-v1",
+  "completed_outputs": 58,
+  "failed_outputs": 2,
+  "models": {
+    "kling-3.0": {
+      "api_completion_rate": 1.0,
+      "attempts": 12,
+      "completed": 12,
+      "failed": 0,
+      "median_credits_per_completed_output": 384.0,
+      "status_counts": {
+        "complete": 12
+      },
+      "total_credits_charged": 4608
+    },
+    "ltx-2.5": {
+      "api_completion_rate": 1.0,
+      "attempts": 12,
+      "completed": 12,
+      "failed": 0,
+      "median_credits_per_completed_output": 384.0,
+      "status_counts": {
+        "complete": 12
+      },
+      "total_credits_charged": 4608
+    },
+    "seedance-2.5": {
+      "api_completion_rate": 0.8333,
+      "attempts": 12,
+      "completed": 10,
+      "failed": 2,
+      "median_credits_per_completed_output": 4608.0,
+      "status_counts": {
+        "complete": 10,
+        "error": 2
+      },
+      "total_credits_charged": 46080
+    },
+    "sora-2": {
+      "api_completion_rate": 1.0,
+      "attempts": 12,
+      "completed": 12,
+      "failed": 0,
+      "median_credits_per_completed_output": 960.0,
+      "status_counts": {
+        "complete": 12
+      },
+      "total_credits_charged": 11520
+    },
+    "veo3.1": {
+      "api_completion_rate": 1.0,
+      "attempts": 12,
+      "completed": 12,
+      "failed": 0,
+      "median_credits_per_completed_output": 768.0,
+      "status_counts": {
+        "complete": 12
+      },
+      "total_credits_charged": 9216
+    }
+  }
+}
