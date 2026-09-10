@@ -1,0 +1,44 @@
+{
+  "benchmark_id": "mh-i2v-commercial-v1",
+  "title": "Commercial Image-to-Video Model Benchmark via the Magic Hour API",
+  "sponsor": "Magic Hour AI, Inc.",
+  "disclosure": "Magic Hour designed and funded this benchmark and provides the API used to access every evaluated model.",
+  "attempts_per_model_scenario": 3,
+  "duration_seconds": 8,
+  "resolution": "720p",
+  "audio": false,
+  "input_image_model": "gpt-image-2",
+  "models": [
+    "kling-3.0",
+    "seedance-2.5",
+    "veo3.1",
+    "sora-2",
+    "ltx-2.5"
+  ],
+  "scenarios": [
+    {
+      "id": "skincare-orbit",
+      "buyer_use_case": "Paid social product hero",
+      "input_prompt": "Premium commercial product photograph of an original unbranded frosted amber skincare serum bottle with a plain cream label and small abstract gold sun symbol, centered on a warm limestone pedestal, soft peach-to-beige studio gradient background, controlled rim lighting, crisp product edges, realistic glass and liquid, no readable words, no logos, no hands, 16:9 landscape composition",
+      "motion_prompt": "A slow smooth 30-degree camera orbit around the serum bottle with a subtle push-in. Warm light glides naturally across the glass. Preserve the bottle shape, cream label, gold sun symbol, liquid level, pedestal, and product proportions exactly. Premium skincare advertisement, physically plausible motion, no new objects, no text changes."
+    },
+    {
+      "id": "sneaker-reveal",
+      "buyer_use_case": "Fashion launch creative",
+      "input_prompt": "High-end commercial studio photograph of an original unbranded ivory and cobalt running shoe floating just above a matte cobalt plinth, precise stitching, clean sole geometry, soft directional light, pale gray seamless background, no words, no logos, no people, crisp catalog-quality product fidelity, 16:9 landscape composition",
+      "motion_prompt": "The camera makes a controlled low-angle arc around the floating sneaker while the shoe rotates very slightly in the opposite direction. Preserve the exact shoe silhouette, ivory and cobalt color blocking, stitching, laces, sole geometry, and plinth. Clean luxury sportswear launch film, smooth motion, no morphing, no added branding or text."
+    },
+    {
+      "id": "coffee-steam",
+      "buyer_use_case": "Food and beverage advertisement",
+      "input_prompt": "Cinematic commercial photograph of an original unbranded matte charcoal coffee bag beside a ceramic espresso cup on a dark walnut counter, a few coffee beans arranged naturally, warm morning window light, rich brown and amber palette, shallow depth of field, no readable words, no logos, no people, 16:9 landscape composition",
+      "motion_prompt": "A gentle dolly-in toward the coffee bag and espresso. Thin realistic steam rises from the cup and curls in the warm window light while the beans and packaging remain fixed. Preserve the bag shape, charcoal color, cup geometry, counter, and composition. Premium coffee advertisement, natural physics, no extra objects, no text."
+    },
+    {
+      "id": "interior-dolly",
+      "buyer_use_case": "Architecture and real-estate visualization",
+      "input_prompt": "Photorealistic editorial interior photograph of a contemporary sunlit living room with warm oak cabinetry, cream boucle sofa, one sculptural floor lamp, pale travertine coffee table, large windows overlooking quiet green trees, refined minimal styling, coherent straight architectural lines, no people, no text, 16:9 landscape composition",
+      "motion_prompt": "A slow stabilized dolly from the doorway into the living room with subtle parallax between the sofa, travertine table, lamp, cabinetry, and windows. Sunlight shifts gently through the trees. Preserve the architecture, furniture identities, straight lines, room layout, and material textures. High-end real-estate film, no new objects, no warping."
+    }
+  ]
+}
