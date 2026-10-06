@@ -1,0 +1,26 @@
+{
+  "version": "mh-commercial-brief-rubric-1",
+  "edition": "Retrospective human review of the immutable v1.0.0 dataset",
+  "dimensions": ["action_camera", "identity_geometry", "label_text", "temporal_artifacts", "output_format"],
+  "scores": {
+    "pass": "Meets the written brief across the full clip.",
+    "minor": "Small visible defect that does not change the product, message, requested action or basic usability of this brief.",
+    "block": "A defect that makes the clip unusable for this specific brief without regeneration or substantial repair."
+  },
+  "binary_acceptance": "Accept if and only if all five dimensions are pass or minor. Any block means reject. Human reviewers must explain the decision; majority of three independent ratings determines clip acceptance.",
+  "general_blocks": {
+    "action_camera": "Requested action/camera movement is absent, reversed, erratic or substantially different. Smooth but incorrect movement is a block.",
+    "identity_geometry": "Product or architecture morphs, changes identity, proportions or specified details; new objects are introduced or required objects disappear.",
+    "label_text": "Original label/symbol/color blocking changes; new branding, words or readable text appears. Legibility is not required where the original brief deliberately has no words.",
+    "temporal_artifacts": "Persistent flicker, warping, material discontinuity, object duplication or physically implausible movement compromises the subject or scene.",
+    "output_format": "Cannot play the full clip, materially differs from eight-second duration, is not 720p-high landscape, or contains requested-to-be-disabled audio. Width may vary slightly; exact 1280 pixels was not guaranteed by the API. Frame rate was not specified."
+  },
+  "scenario_blocks": {
+    "skincare-orbit": "Missing smooth orbit/push-in or significant bottle/cream-label/gold-sun/liquid-level/pedestal distortion. A slightly different orbit angle is minor if the intended controlled product reveal remains.",
+    "sneaker-reveal": "Missing low-angle arc and slight counter-rotation, changing shoe silhouette/color blocking/stitching/laces/sole/plinth, morphing, added branding or text.",
+    "coffee-steam": "Missing dolly-in or natural rising steam; packaging/beans move when specified fixed; bag/cup/counter geometry changes or extra objects/text appear.",
+    "interior-dolly": "Missing stabilized inward dolly/parallax, altered room layout/furniture/architecture/materials, bent straight lines or added objects. Minor lighting variation is tolerable."
+  },
+  "protocol": "Watch every full clip against the supplied input image and exact motion prompt. Three humans review independently before discussion; at least one is independent of Magic Hour. Record affiliations and prior recognition. Do not inspect model names, prices, original filenames, contact sheets or the private assignment key until ratings are frozen. No AI labels. Public prior exposure prevents guaranteed blinding; disclose recognition.",
+  "scope": "Acceptance means this written commercial brief, not general professional quality, advertising performance, commercial rights or model superiority. Four scenarios and twelve attempts/model are descriptive pilot evidence. Do not treat three ratings as three independent generation trials."
+}

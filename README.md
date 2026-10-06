@@ -41,6 +41,10 @@ MAGIC_HOUR_API_KEY=your_key python3 run_benchmark.py
 
 The runner records a project ID immediately after every successful creation request and resumes by polling that project. It does not repeat a saved creation request. Private project IDs and temporary download URLs remain in the ignored local state file.
 
+## Retrospective human review
+
+See [human-review protocol and data dictionary](HUMAN_REVIEW.md) for the offline blinded packet, unfilled three-human collection sheet and gated acceptance/cost exporter. This is a separate retrospective edition, not new quality findings or a replacement for v1.0.0.
+
 ## License
 
 The methodology, prompts, and result metadata are released under CC BY 4.0. Generated media are released for viewing and research under the terms in `MEDIA-LICENSE.md`.
